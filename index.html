@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest trends in fashion for 
+    women and men at SA FashionStyle. Shop our wide selection of clothes, bags,
+    jewelry, and more. Elevate your style with our curated collections.">
+    <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
+    <meta name="author" content="SA_FashionStyle">
+    <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>goal diggers site</title>
+</head>
+<body>
+    <header class="container" id="header">
+        <div class="header_top">
+            <div class="header_social">
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+            <div class="announcement-bar">
+                <img class="left_icon" src="images/left_icon.png" alt="">
+                <h4 class="announcement_text">Free Shipping For All Products</h4>
+                <img class="right_icon" src="images/right_icon.png" alt="">
+            </div>
+            <!-- <img src="images/newlogo.jpg" alt="page logo" id="logo"> -->
+            <div class="header_actions">
+                <div id="display_login">
+                    <a href="#" id="logout" onclick="logout();">
+                        <span id="signout">Sign Out</span>
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <a href="login.html" title="Login" id="login_btn">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </div>
+        <nav id="navbar">
+            <img src="images/newlogo-removebg-preview.png" alt="page logo" id="logo">
+            <menu>
+                <ul class="close">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Clothes</a></li>
+                    <li><a href="products.html">Shoes</a></li>
+                    <li><a href="products.html">Watches</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                    
+                </ul>
+            </menu>
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="search()">Search</button>
+            </div>
+            <div class="side_bar">
+                <div class="search-bar-small">
+                    <img class="search_icon" src="images/search-interface-symbol.png" alt="">
+                </div>
+                <div class="menu_icon">
+                    <img class="menu_icon_image" src="images/menu-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <!-- slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-content">
+                   <img src="images/background/homepage_banner_copy_5.webp">
+                   <div class="text">
+                    <!-- <h2>Get up to 30% Off New Arrivals</h2>  -->
+                    <!-- <a href="products.html" class="shop-btn">Shop Now</a> -->
+                   </div>
+                </div>
+                <div class="slide-content">
+                    <img src="images/background/Homepage-Banner_YoeOro5[1].webp">
+                    <div class="text">
+                     <!-- <h2>Get up to 30% Off New Arrivals</h2>
+                     <a href="products.html" class="shop-btn">Shop Now</a> -->
+                    </div>
+                 </div>
+                 <div class="slide-content">
+                    <img src="images/background/web-banner_1_9sfZv0A.webp">
+                    <div class="text">
+                     <!-- <h2>Get up to 30% Off New Arrivals</h2>
+                     <a href="products.html" class="shop-btn">Shop Now</a> -->
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="prevSlider();">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button class="next" onclick="nextSlider();">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+    <div class="hero_for_phone">
+        <div class="hero-content">
+            <img src="images/background/phone.webp">
+            <div class="text">
+             <h2>Mini Collection</h2>
+             <p>Colour the summer in hot fuschia, bubblegum pink</p>
+             <a href="products.html" class="shop-btn">Shop Now</a>
+            </div>
+         </div>
+    </div>
+    <!-- cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+              <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
+        </div>
+    </div>
+    <!-- Top Products -->
+    <div class="top_products">
+        <div class="container">
+            <div class="header">
+                <h3>Trending Products</h3>
+                <p>Follow the most popular trends and get exclusive items from Foesta shop.</p>
+            </div>
+            <div class="products">
+                <!-- add by js -->
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <img src="images/WhatsApp Image 2024-07-07 at 23.57.13_1e3c3078.jpg" alt="Banner Image" class="banner-image">
+    </section>
+
+    <div class="reelcontainer">
+        <div class="scroll-container">
+            <div class="scroll-item">
+                <video autoplay muted loop>
+                    <source src="vid4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="scroll-item">
+                <video autoplay muted loop>
+                    <source src="vid5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="scroll-item">
+                <video autoplay muted loop>
+                    <source src="vid6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <div class="scroll-item">
+                <video autoplay muted loop>
+                    <source src="vid1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="scroll-item">
+                <video autoplay muted loop>
+                    <source src="vid2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="scroll-item">
+                <video autoplay muted loop>
+                    <source src="vid3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Add more videos as needed -->
+        </div>
+        </div>
+    <!-- collection section    -->
+    <section class="collection-section">
+        <div class="collection-wrapper">
+            <div class="collection-men">
+                <h2 class="collection-title">Men's Collection</h2>
+                <div class="collection-content">
+                    <div class="collection-images">
+                        <img src="images/1_jdANrJGJf64m3IHraFrXqA.jpg" alt="Men's Clothing">
+                        <img src="images/JOLLY-1_700x.webp" alt="Men's Shoes">
+                        <img src="images/istockphoto-533714204-612x612.jpg" alt="Men's Watches">
+                    </div>
+                    <div class="collection-details">
+                        <div class="details-block">
+                            <h3>Clothes</h3>
+                            <p>Explore our latest collection of men's clothing.</p>
+                            <a href="products.html" class="btn btn-outline">Shop Now</a>
+                        </div>
+                        <div class="details-block">
+                            <h3>Shoes</h3>
+                            <p>Discover our range of stylish men's shoes.</p>
+                            <a href="products.html" class="btn btn-outline">Shop Now</a>
+                        </div>
+                        <div class="details-block">
+                            <h3>Watches</h3>
+                            <p>Shop our exclusive collection of men's watches.</p>
+                            <a href="products.html" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="collection-women">
+                <h2 class="collection-title">Women's Collection</h2>
+                <div class="collection-content">
+                    <div class="collection-images">
+                        <img src="images/depositphotos_392159684-stock-photo-portrait-of-cheerful-girl-choosing.jpg" alt="Women's Clothing">
+                        <img src="images/Infinity04_700x.webp" alt="Women's Shoes">
+                        <img src="images/fde9b2a9-e0c3-4ba9-8a40-5959db8d9f28.__CR0,0,600,450_PT0_SX600_V1___.jpg" alt="Women's Watches">
+                    </div>
+                    <div class="collection-details">
+                        <div class="details-block">
+                            <h3>Clothes</h3>
+                            <p>Discover our latest collection of women's clothing.</p>
+                            <a href="products.html" class="btn btn-outline">Shop Now</a>
+                        </div>
+                        <div class="details-block">
+                            <h3>Shoes</h3>
+                            <p>Explore our stylish women's shoe collection.</p>
+                            <a href="products.html" class="btn btn-outline">Shop Now</a>
+                        </div>
+                        <div class="details-block">
+                            <h3>Watches</h3>
+                            <p>Shop our exclusive collection of women's watches.</p>
+                            <a href="products.html" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- info -->
+      <div class="information">
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/global-distribution.png" alt="global-distribution" >
+            </div>
+            <div class="info-text">
+                <h3>Shipping Worldwide</h3>
+                <p> Free shipping on all US order or order above $100</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/delivery-status.png" alt="delivery-status" >
+            </div>
+            <div class="info-text">
+                <h3>14 Days Return</h3>
+                <p>Simply return it within 30 days for an exchange.</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/check.png" alt="Security" >
+            </div>
+            <div class="info-text">
+                <h3>Security Payment</h3>
+                <p>We ensure secure payment with PEV</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/24-hours-support.png" alt="24-hours-support" >
+            </div>
+            <div class="info-text">
+                <h3>24/7 Support</h3>
+                <p>Contact us 24 hours a day, 7 days a week</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="deals">
+        <div class="deals_heading">
+            <h3>DEALS YOU DON'T WANT TO MISS</h3>
+        </div>
+        <div class="main_deals">
+            <div class="deal"><a href=""><img src="images/under699.jpg" alt=""></a></div>
+            <div class="deal"><a href=""><img src="images/under799.jpg" alt=""></a></div>
+            <div class="deal"><a href=""><img src="images/under999.jpg" alt=""></a></div>
+            <div class="deal"><a href=""><img src="images/under1800.jpg" alt=""></a></div>
+            <div class="deal"><a href=""><img src="images/under9992.jpg" alt=""></a></div>
+        </div>
+    </div>
+
+    <!-- Video Banner Section -->
+    <section class="video-banner">
+    <video autoplay muted loop id="videoBanner">
+        <source src="images/Linen_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+   
+    </section>
+
+    <!-- news -->
+    <div class="news hight">
+        <div class="news-text">
+            <h4>Newsletter</h4>
+            <p>
+                Subscribe to our newsletter and get 20% off your first purchase
+            </p>
+        </div>
+        <div class="Subscribe-form">
+            <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off">
+            <button type="submit" value="submit">
+                <img src="images/send.png" alt="send-data" width="30"/>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer" data-section>
+        <div class="container">
+    
+          <div class="footer-top">
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Company</p>
+              </li>
+    
+              <li>
+                <p class="footer-list-text">
+                  Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+                </p>
+              </li>
+    
+              <!-- <li>
+                <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
+              </li>
+    
+              <li>
+                <p class="footer-list-text">hello@domain.com</p>
+              </li> -->
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Useful links</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">New Products</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Best Sellers</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Bundle & Save</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Online Gift Card</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Infomation</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Start a Return</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Shipping FAQ</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+    
+            </ul>
+    
+            <div class="footer-list">
+    
+              <p class="newsletter-title">Good emails.</p>
+    
+              <p class="newsletter-text">
+                Enter your email below to be the first to know about new collections and product launches.
+              </p>
+    
+              <form action="" class="newsletter-form">
+                <input type="email" name="email_address" placeholder="Enter your email address" required
+                  class="email-field">
+    
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+    
+            </div>
+    
+          </div>
+    
+          <div class="footer-bottom">
+    
+            <div class="wrapper">
+              <p class="copyright">
+                &copy; 2024  All rights reserved
+              </p>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+    
+              </ul>
+            </div>
+    
+            <a href="#" class="logo">
+              <img src="images/newlogo-removebg-preview.png" width="179" height="26" loading="lazy" alt="Glowing">
+            </a>
+    
+            <img src="images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+    
+          </div>
+    
+        </div>
+      </footer>
+  
+    <!-- <footer class="footer">
+         <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/newlogo.jpg" alt="logo" width="140">
+                <p>The customer is at the heart of our unique business model, which includes design.</p>
+            </div>
+            <div class="footer-list">
+                <div class="list">
+                    <h4>SHOPPING</h4>
+                    <ul>
+                        <li><a href="products.html">Mens Clothes</a></li>
+                        <li><a href="products.html">Mens Shoes</a></li>
+                        <li><a href="products.html">Mens Watches</a></li>
+                        <li><a href="products.html">Womens Clothes </a></li>
+                        <li><a href="products.html">Womens Shoes </a></li>
+                        <li><a href="products.html">Womens Watches </a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>Customer Services</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ's</a></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </footer> -->
+    <!-- <script src="JavaScript/index.js"></script> -->
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/getDetails.js"></script>
+    <script src="JavaScript/cart.js"></script>
+</body>
+</html>
+
+<style>
+    #searchInput{
+        width: 300px;
+    }
+
+    .banner-image{
+        width: 100%;
+    }
+
+    .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    width: 95%;
+    padding: 30px;
+    background-color: #fff;
+    /* background-color: rgb(209, 209, 209); */
+    border: 1px solid black;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 2px 2px 15px gray;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #ccc; /* Firefox */
+
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 8px;
+}
+
+.scroll-item {
+    /* min-width: 300px; */
+    margin: 0 10px;
+    flex-shrink: 0;
+    /* border-radius: 10px; */
+}
+
+.reelcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    width:224px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+video:hover{
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
+
+source{
+    border-radius: 20px;
+}
+
+</style>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover the latest trends in fashion for 
+        women and men at SA FashionStyle. Shop our wide selection of clothes, bags,
+        jewelry, and more. Elevate your style with our curated collections.">
+        <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
+        <meta name="author" content="SA_FashionStyle">
+        <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="Style/productDetails.css">
+        <link rel="stylesheet" href="Style/main.css">
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- animation icon -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+        <title>product-details</title>
+    </head>
+<body>
+    <header class="container" id="header">
+        <div class="header_top">
+            <div class="header_social">
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+            <div class="announcement-bar">
+                <img class="left_icon" src="images/left_icon.png" alt="">
+                <h4 class="announcement_text">Free Shipping For All Products</h4>
+                <img class="right_icon" src="images/right_icon.png" alt="">
+            </div>
+            <!-- <img src="images/newlogo.jpg" alt="page logo" id="logo"> -->
+            <div class="header_actions">
+                <div id="display_login">
+                    <a href="#" id="logout" onclick="logout();">
+                        <span id="signout">Sign Out</span>
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <a href="login.html" title="Login" id="login_btn">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </div>
+        <nav id="navbar">
+            <img src="images/newlogo-removebg-preview.png" alt="page logo" id="logo">
+            <menu>
+                <ul class="close">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Clothes</a></li>
+                    <li><a href="products.html">Shoes</a></li>
+                    <li><a href="products.html">Watches</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                    
+                </ul>
+            </menu>
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="search()">Search</button>
+            </div>
+            <div class="side_bar">
+                <div class="search-bar-small">
+                    <img class="search_icon" src="images/search-interface-symbol.png" alt="">
+                </div>
+                <div class="menu_icon">
+                    <img class="menu_icon_image" src="images/menu-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="Promotional_code">
+            <h2>
+                Do you have a Promotional Code?
+            </h2>
+            <div class="apply_code">
+                <input type="text" id="code" placeholder="Promo code">
+                <button >Done</button>
+            </div>
+        </div>
+        <div class="container">
+        <div class="productDetails">
+            <div class="images">
+                <img id="product_image" src="" alt="productDetails">
+            </div>
+            <div class="details">
+                <span class="category_name"></span>
+                <h2 class="product_name"></h2>
+                <h3 class="product_price"></h3>
+                <p class="product_des"></p>
+                <div class="buttons">
+                    <div class="counts">
+                          <button id="minus" class="counts_btns">-</button>
+                          <input type="number" inputmode="numeric" name="productCount" min="1" step="1" max="999"
+                           class="product_count" id="productCount" value="1">
+                          <button id="plus" class="counts_btns">+</button>
+                    </div>
+                    <button id="btn_add">Add To Cart</button>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- alert -->
+    <div class="toast-overlay" id="toast-overlay">
+        <div class="success-msg">
+            <div id="checkIcon" style="width: 100px; height: 100px;"></div>
+            <h4>Your item has been added to the shopping bag</h4>
+        </div>
+    </div>
+    
+    <section class="more-recommendations">
+        <div class="container">
+            <h2>More Recommendations</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-item">
+                    <img src="path/to/recommendation-1.jpg" alt="Recommendation 1">
+                    <h3>Product Name 1</h3>
+                    <p>Product description or key features.</p>
+                    <a href="#" class="btn">View Product</a>
+                </div>
+                <div class="recommendation-item">
+                    <img src="path/to/recommendation-2.jpg" alt="Recommendation 2">
+                    <h3>Product Name 2</h3>
+                    <p>Product description or key features.</p>
+                    <a href="#" class="btn">View Product</a>
+                </div>
+                <!-- Add more recommendation items as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="image-banner">
+        <img src="images/WhatsApp Image 2024-07-09 at 22.30.36_6540dc1c.jpg" alt="Banner Image">
+    </section>
+    
+    <!-- cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+         <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+           <div class="footer-logo">
+               <img src="images/newlogo.jpg" alt="logo" width="140">
+               <p>The customer is at the heart of our unique business model, which includes design.</p>
+           </div>
+           <div class="footer-list">
+            <div class="list">
+                <h4>SHOPPING</h4>
+                <ul>
+                    <li><a href="products.html">Mens Clothes</a></li>
+                    <li><a href="products.html">Mens Shoes</a></li>
+                    <li><a href="products.html">Mens Watches</a></li>
+                    <li><a href="products.html">Womens Clothes </a></li>
+                    <li><a href="products.html">Womens Shoes </a></li>
+                    <li><a href="products.html">Womens Watches </a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <h4>Customer Services</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ's</a></li>
+                </ul>
+            </div>
+   
+           </div>
+        </div>
+    </footer>
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/getDetails.js"></script>
+    <script src="JavaScript/cart.js"></script>
+</body>
+</html>
+
+<style>
+.Promotional_code {
+    margin-top: 30px; /* Adjust margin-top as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    width: 70%; /* Same width as the Add to Cart button */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Promotional_code h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.apply_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.apply_code input[type="text"] {
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.apply_code button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.apply_code button:hover {
+    background-color: #333; /* Darken the hover color if desired */
+}
+
+.image-banner {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.more-recommendations {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.more-recommendations .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.more-recommendations h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recommendation-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recommendation-item p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.recommendation-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.recommendation-item .btn:hover {
+    background-color: #333;
+}
+
+
+</style>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Discover the latest trends in fashion for 
+        women and men at SA FashionStyle. Shop our wide selection of clothes, bags,
+        jewelry, and more. Elevate your style with our curated collections.">
+        <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, SA FashionStyle, latest trends, stylish clothing, accessories">
+        <meta name="author" content="SA_FashionStyle">
+        <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="Style/productDetails.css">
+        <link rel="stylesheet" href="Style/main.css">
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- animation icon -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+        <title>product-details</title>
+    </head>
+<body>
+    <header class="container" id="header">
+        <div class="header_top">
+              <div class="header_social">
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </div>
+              <img src="images/newlogo.jpg" alt="page logo" id="logo">
+              <div class="header_actions">
+                <div id="display_login">
+                    <!-- <span id="user_name">Welcome</span> -->
+                    <a href="#" id="logout" onclick="logout();">
+                      <span id="signout">Sign Out</span>
+                      <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                  </div>
+                <a href="login.html" title="Login" id="login_btn">
+                 <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span id="cart-counter">0</span>
+                </a>
+           </div>
+        </div>
+        <nav id="navbar">
+            <menu>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                </ul>
+            </menu>
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="search()">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="Promotional_code">
+            <h2>
+                Do you have a Promotional Code?
+            </h2>
+            <div class="apply_code">
+                <input type="text" id="code" placeholder="Promo code">
+                <button >Done</button>
+            </div>
+        </div>
+
+        <main class="productcontainer container">
+          
+          <div class="product-description productDetails">
+            <!-- Left Column / Headphones Image -->
+            <div class="left-column images">
+              <!-- <img data-image="black" src="Screenshot 2024-07-12 at 12.08.15 PM.png" alt="">
+              <img data-image="blue" src="Screenshot 2024-07-12 at 12.08.29 PM.png" alt="">
+              <img data-image="red" class="active" src="Screenshot 2024-07-12 at 12.08.15 PM.png" alt=""> -->
+              <img id="product_image" src="" alt="productDetails">
+            
+            </div>
+           
+           
+            <!-- Right Column -->
+            <div class="right-column details">
+           
+              <!-- Product Description -->
+              <span class="category_name"></span>
+                <!-- <span>Fashion</span> -->
+                <h2 class="product_name"></h2>
+                <!-- <h3 class="product_price"></h3> -->
+                <!-- <h1>Navy Printed Casual Full Sleeves Round Neck Men Slim Fit T-Shirts</h1> -->
+                <!-- <p>Push your comfort level to the max with this trendy T-Shirt. This basic full-sleeve t-shirt with a round neck, is apt for a casual day out. Style this T-shirt with a pair of jeans and contrasting sneakers for a casual look.</p> -->
+              </div>
+
+              <div>
+                <!-- <span class="original-price"><del>Rs 50.00</del></span>
+    <span class="discounted-price">Rs 30.00</span> -->
+                <h3 class="product_price"></h3>
+              </div><br>
+           
+              <!-- Product Configuration -->
+              <div class="product-configuration">
+           
+                <!-- Product Color -->
+                <div class="product-color">
+                  <span>Color</span>
+           
+                  <div class="color-choose">
+                    <div>
+                      <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                      <label for="red"><span></span></label>
+                    </div>
+                    <div>
+                      <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                      <label for="blue"><span></span></label>
+                    </div>
+                    <div>
+                      <input data-image="black" type="radio" id="black" name="color" value="black">
+                      <label for="black"><span></span></label>
+                    </div>
+                  </div>
+           
+                </div>
+
+                <div class="size">
+                    <span>Size</span>
+           
+                  <div class="sizecont">
+                    <div class="sizebox">XS</div>
+                    <div class="box">
+                    <div class="sizebox">S</div>
+                        <div class="hurry">1 Left</div>
+                    </div>
+                    <div class="sizebox">M</div>
+                    <div class="box">
+                        <div class="sizebox">L</div>
+                            <div class="hurry">3 Left</div>
+                        </div>
+                    <div class="sizebox">XL</div>
+                    <div class="sizebox">XXL</div>
+                  </div>
+                </div>
+                <br>
+           
+                <!-- Cable Configuration -->
+                <div class="cable-config">
+                  <span>Fabric Matrial</span>
+           
+                  <div class="cable-choose">
+                    <button>Cotton</button>
+                    <button>Acrylic</button>
+                    <button>Linen</button>
+                  </div>
+           
+                  <a href="#">How to choose your size</a>
+                </div>
+
+                <div class="quantity-container">
+                  <button class="quantity-btn" id="decrease-btn">-</button>
+                  <input type="number" id="quantity-input" value="1" min="1">
+                  <button class="quantity-btn" id="increase-btn">+</button>
+                </div>
+              </div>
+           
+              <!-- Product Pricing -->
+              <div class="product-price">
+                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="wish">
+                  <img class="heart" src="heart-regular.svg" alt="">
+                  Add to wishlist</a>
+              </div> <br>
+
+              <div class="checktime">
+                <p class="paratime">
+                  Check Delivery Time
+                </p>
+                <div class="inputbox"><input type="number" placeholder="Enter Pincode" class="inputcont">
+                  <button class="check">CHECK</button>
+                </div> <br>
+                
+                <div class="btn">
+                <button class="btn1">
+                  <img src="money-bill-1-regular.svg" alt="" class="logo">
+                  COD Available</button>
+                <button class="btn2">
+                  <img src="lock-solid.svg" alt="" class="logo">
+                  Secure Payment
+                </button>
+              </div>
+              </div>
+              <br>
+
+              <div class="faq-container">
+                <div class="faq-item">
+                  <button class="faq-question">PRODUCT DESCRITION</button>
+                  <div class="faq-answer">
+                    <p class="product_des"></p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question">PRODUCT DETAILS</button>
+                  <div class="faq-answer">
+                    <p>Style Code:   PJKCARGF590495</p>
+                    <p>Seeves: Half Sleeves</p>
+                    <p>Color: Navy</p>
+                    <p>Product Type: T-shirt</p>
+                    <p>Brand: Peter England</p>
+                    <p>Fit: Regular Fit</p>
+                  </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+              </div>
+            </div>
+
+            
+          </main>
+
+          
+        
+        <!-- <div class="container">
+            <div class="image-section">
+                <img class="pic" src="Screenshot 2024-07-12 at 12.08.15 PM.png" alt="Black Corset Tie Up Dress">
+                <img class="pic" src="Screenshot 2024-07-12 at 12.08.29 PM.png" alt="">
+            </div>
+            <div class="details-section">
+                <div class="product-title">Black Corset Tie Up Dress</div>
+                <div class="price">
+                    ₹960 <span class="old-price">₹2400</span> <span class="discount">(60% OFF)</span>
+                </div>
+                <div class="inclusive-taxes">Inclusive of all taxes</div>
+                <div class="sku">SKU: DRS04670Z</div>
+                <div class="delivery-info">
+                    <span class="delivery"><img class="truck" src="truck-solid.svg" alt="">   EXPRESS</span> | 3 Day Delivery on orders placed before 2pm
+                </div>
+               <div class="guide">
+                <p class="para1">SIZE :</p>
+                <p class="para2"><a href="#" style="color: black;">SIZE GUIDE</a></p>
+               </div>
+                <div class="size-selection">
+                    <div class="cont">
+                        <div class="size">S</div>
+                        <div class="bottom">1 Left</div>
+                    </div>
+    
+                    <div class="cont">
+                        <div class="size" style="color: lightgray;">M</div>
+                    </div>
+                    <div class="cont">
+                        <div class="size">L</div>
+                        <div class="bottom">3 Left</div>
+                    </div>
+                    <div class="cont">
+                        <div class="size" style="color: lightgray;">XL</div>
+                    </div>
+    
+                </div>
+                <div class="buttons">
+                    <button class="add-to-bag">ADD TO BAG</button>
+                    <button class="add-to-wishlist">
+                        <img src="heart-regular.svg" alt="" height="25px" width="25px">
+                        ADD TO WISHLIST</button>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <!-- <div class="container">
+        <div class="productDetails">
+            <div class="images">
+                <img id="product_image" src="" alt="productDetails">
+            </div>
+            <div class="details">
+                <span class="category_name"></span>
+                <h2 class="product_name"></h2>
+                <h3 class="product_price"></h3>
+                <p class="product_des"></p>
+                <div class="buttons">
+                    <div class="counts">
+                          <button id="minus" class="counts_btns">-</button>
+                          <input type="number" inputmode="numeric" name="productCount" min="1" step="1" max="999"
+                           class="product_count" id="productCount" value="1">
+                          <button id="plus" class="counts_btns">+</button>
+                    </div>
+                    <button id="btn_add">Add To Cart</button>
+                </div>
+                
+            </div>
+        </div>
+        </div> -->
+    </main>
+    <!-- alert -->
+    <div class="toast-overlay" id="toast-overlay">
+        <div class="success-msg">
+            <div id="checkIcon" style="width: 100px; height: 100px;"></div>
+            <h4>Your item has been added to the shopping bag</h4>
+        </div>
+    </div>
+    
+    <section class="more-recommendations">
+        <div class="container">
+            <h2>More Recommendations</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-item">
+                    <img src="path/to/recommendation-1.jpg" alt="Recommendation 1">
+                    <h3>Product Name 1</h3>
+                    <p>Product description or key features.</p>
+                    <a href="#" class="btn">View Product</a>
+                </div>
+                <div class="recommendation-item">
+                    <img src="path/to/recommendation-2.jpg" alt="Recommendation 2">
+                    <h3>Product Name 2</h3>
+                    <p>Product description or key features.</p>
+                    <a href="#" class="btn">View Product</a>
+                </div>
+                <!-- Add more recommendation items as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="image-banner">
+        <img src="images/WhatsApp Image 2024-07-09 at 22.30.36_6540dc1c.jpg" alt="Banner Image">
+    </section>
+    
+    <!-- cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+         <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+           <div class="footer-logo">
+               <img src="images/newlogo.jpg" alt="logo" width="140">
+               <p>The customer is at the heart of our unique business model, which includes design.</p>
+           </div>
+           <div class="footer-list">
+            <div class="list">
+                <h4>SHOPPING</h4>
+                <ul>
+                    <li><a href="products.html">Mens Clothes</a></li>
+                    <li><a href="products.html">Mens Shoes</a></li>
+                    <li><a href="products.html">Mens Watches</a></li>
+                    <li><a href="products.html">Womens Clothes </a></li>
+                    <li><a href="products.html">Womens Shoes </a></li>
+                    <li><a href="products.html">Womens Watches </a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <h4>Customer Services</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ's</a></li>
+                </ul>
+            </div>
+   
+           </div>
+        </div>
+    </footer>
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/getDetails.js"></script>
+    <!-- <script src="JavaScript/index.js"></script> -->
+
+    <script src="JavaScript/cart.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const faqQuestions = document.querySelectorAll('.faq-question');
+    
+          faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+              const answer = this.nextElementSibling;
+    
+              if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+              } else {
+                answer.style.display = 'block';
+              }
+            });
+          });
+        });
+      </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const decreaseBtn = document.getElementById('decrease-btn');
+  const increaseBtn = document.getElementById('increase-btn');
+  const quantityInput = document.getElementById('quantity-input');
+
+  decreaseBtn.addEventListener('click', function() {
+    let currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+
+  increaseBtn.addEventListener('click', function() {
+    let currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+  });
+
+  quantityInput.addEventListener('input', function() {
+    let currentValue = parseInt(quantityInput.value);
+    if (isNaN(currentValue) || currentValue < 1) {
+      quantityInput.value = 1;
+    }
+  });
+});
+      </script>
+</body>
+</html>
+
+<style>
+.Promotional_code {
+    margin-top: 30px; /* Adjust margin-top as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    width: 70%; /* Same width as the Add to Cart button */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Promotional_code h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.apply_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.apply_code input[type="text"] {
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.apply_code button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.apply_code button:hover {
+    background-color: #333; /* Darken the hover color if desired */
+}
+
+.image-banner {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.more-recommendations {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.more-recommendations .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.more-recommendations h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recommendation-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recommendation-item p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.heart{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.recommendation-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.recommendation-item .btn:hover {
+    background-color: #333;
+}
+
+
+
+.productcontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+
+.left-column {
+  width: 65%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+
+/* Left Column */
+.left-column img {
+  padding-top: 10%;
+  width: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+ 
+.left-column img.active {
+  opacity: 1;
+}
+
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.original-price {
+  color: #777;
+  margin-right: 10px;
+  text-decoration:line-through;
+}
+
+.discounted-price {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 30px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+.product-color {
+  margin-bottom: 30px;
+}
+ 
+.color-choose div {
+  display: inline-block;
+}
+ 
+.color-choose input[type="radio"] {
+  display: none;
+}
+ 
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+ 
+.color-choose input[type="radio"]#red + label span {
+  background-color: #C91524;
+}
+.color-choose input[type="radio"]#blue + label span {
+  background-color: #314780;
+}
+.color-choose input[type="radio"]#black + label span {
+  background-color: #323232;
+}
+ 
+.color-choose input[type="radio"]:checked + label span {
+  background-image: url(images/check-icn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.size{
+    /* font-size: 2rem; */
+}
+
+.cable-choose {
+  margin-bottom: 20px;
+}
+.sizecont{
+    display: flex;
+    justify-content: space-between;
+}
+.sizebox{
+    
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center !important;
+    border:2px solid lightgray;
+    border-radius: 5px;
+    align-items: center;
+}
+.sizebox:hover{
+    border: 2.5px solid #86939E;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.hurry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 13px;
+    width: 40px;
+    background-color: red;
+    color:white;
+    right:-5.5px;
+    font-size: 10px;
+    font-weight: bolder;
+    border-radius: 5px;      
+}
+
+.cable-choose button {
+  border: 2px solid #E1E8EE;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5E6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .5s;
+}
+ 
+.cable-choose button:hover,
+.cable-choose button:active,
+.cable-choose button:focus {
+  border: 2px solid #86939E;
+  outline: none;
+}
+ 
+.cable-config {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+ 
+.cable-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+ 
+.cable-config a:before {
+  content: "?";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+ 
+.cart-btn {
+  display: inline-block;
+  background-color:black;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;   
+}
+
+.wish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  background-color: rgb(152, 152, 152);
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+
+.wish:hover{
+    background-color: rgb(106, 106, 106);
+}
+
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #ddd;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background-color: #fafafa;
+  border-left: 3px solid #007BFF;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.quantity-btn {
+  width: 40px;
+  height: 40px;
+  background-color:transparent;
+  color:black;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.quantity-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#quantity-input {
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  margin: 0 10px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.inputcont{
+  padding: 10px;
+  width: 70%;
+  outline: none;
+}
+.check{
+  padding: 10px;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn1,.btn2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  display: inline-block;
+  background-color: white;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;   
+}
+      
+.logo{
+  position: relative;
+  top:3px;
+  height: 20px;
+  width: 20px;
+}
+</style>

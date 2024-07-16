@@ -1,0 +1,207 @@
+[
+    {
+        "id": 1,
+        "name": "Deadpool: No More Calm Oversizes Tshirt",
+        "price": "₹225.00",
+        "images": [
+            "images/man/tshirt1.webp"
+        ],
+        "isTrending": true,
+        "category": "Man",
+        "description": "Shop for Solids: Light Beige (Straight Fit). Our goal is to give everyone something they'll love, something they can use to express themselves, and, simply put, something to put a smile on their face. So, whether it's superheroes like Superman, TV shows like F.R.I.E.N.D.S, pop culture, music, sports, or quirky, funny stuff you're looking for, we have something for everyone."
+    },
+    {
+        "id": 2,
+        "name": "Oversized Polo Tshirt For Men",
+        "price": "₹300.00",
+        "images": [ 
+            "images/man/polo1.webp"
+    ],
+        "category": "Man",
+        "description": "Shop for Solids: Light Beige (Straight Fit). Our goal is to give everyone something they'll love, something they can use to express themselves, and, simply put, something to put a smile on their face. So, whether it's superheroes like Superman, TV shows like F.R.I.E.N.D.S, pop culture, music, sports, or quirky, funny stuff you're looking for, we have something for everyone."
+    },
+    {
+        "id": 3,
+        "name": "Holiday Shirt For Men",
+        "price": "₹400.00",
+        "images":["images/man/shirt1.webp"],
+        "category": "Man",
+        "description": "Shop for Solids: Light Beige (Straight Fit). Our goal is to give everyone something they'll love, something they can use to express themselves, and, simply put, something to put a smile on their face. So, whether it's superheroes like Superman, TV shows like F.R.I.E.N.D.S, pop culture, music, sports, or quirky, funny stuff you're looking for, we have something for everyone."
+    },
+    {
+        "id": 4,
+        "name": "Men Cargo Jeans",
+        "price": "₹700",
+        "images":["images/man/cargo1.webp"],
+        "category": "Man",
+        "description": "Shop for Solids: Light Beige (Straight Fit). Our goal is to give everyone something they'll love, something they can use to express themselves, and, simply put, something to put a smile on their face. So, whether it's superheroes like Superman, TV shows like F.R.I.E.N.D.S, pop culture, music, sports, or quirky, funny stuff you're looking for, we have something for everyone."
+    },
+    {
+        "id": 5,
+        "name": "Zeus Men Fashion Sneakers/Running Shoes",
+        "price": "₹2200.00",
+        "images": ["images/man/shoes1_1.jpg"],
+        "category": "Man",
+        "isTrending": true,
+        "description": "Footwear refers to garments worn on the feet, which typically serve the purpose of protection against adversities of the environment such as wear from rough ground; stability on slippery ground; and temperature."
+    },
+    {
+        "id": 6,
+        "name": "BALANCER Men's Fashion Sneakers",
+        "price": "₹8500.00",
+        "images": ["images/man/shoes1_2.jpg"],
+        "category": "Man",
+        "description": "Footwear refers to garments worn on the feet, which typically serve the purpose of protection against adversities of the environment such as wear from rough ground; stability on slippery ground; and temperature."
+    },
+    {
+        "id": 7,
+        "name": "Men's Rover Comfortable Clogs",
+        "price": "₹1000.00",
+        "images": ["images/man/sandal_1.jpg"],
+        "category": "Man",
+        "description": "Footwear refers to garments worn on the feet, which typically serve the purpose of protection against adversities of the environment such as wear from rough ground; stability on slippery ground; and temperature."
+    },
+    {
+        "id": 8,
+        "name": "Big Fox Cork sandals for men",
+        "price": "₹1500",
+        "images": ["images/man/crocs_1.jpg"],
+        "category": "Man",
+        "description": "Footwear refers to garments worn on the feet, which typically serve the purpose of protection against adversities of the environment such as wear from rough ground; stability on slippery ground; and temperature."
+    },
+    {
+        "id": 9,
+        "name": "Timex Fashion Analog Black Dial Men's Watch",
+        "price": "₹500.00",
+        "images": ["images/man/menwatch1_1.jpg"],
+        "category": "Man",
+        "isTrending": true,
+        "description": "The Mechanical Watch. One for the traditional man. A mechanical watch is your original, old-fashioned, hand-wound watch. Unlike a quartz watch, which is battery-powered, a mechanical watch is driven by a vast network of intricate workings and expert craftsmanship."
+    },
+    {
+        "id": 10,
+        "name": "Casio Men Resin Youth Combination AnalogDigital Black Dial Watch",
+        "price": "₹600.00",
+        "images": ["images/man/menwatch1_2.jpg"],
+        "category": "Man",
+        "description": "The Mechanical Watch. One for the traditional man. A mechanical watch is your original, old-fashioned, hand-wound watch. Unlike a quartz watch, which is battery-powered, a mechanical watch is driven by a vast network of intricate workings and expert craftsmanship."
+    },
+    {
+        "id": 11,
+        "name": "Titan Quartz Analog with Day and Date Silver Dial Leather Strap Watch for Men",
+        "price": "₹540.00",
+        "images": ["images/man/menwatch1_3.jpg"],
+        "category": "Man",
+        "description": "The Mechanical Watch. One for the traditional man. A mechanical watch is your original, old-fashioned, hand-wound watch. Unlike a quartz watch, which is battery-powered, a mechanical watch is driven by a vast network of intricate workings and expert craftsmanship.."
+    },
+    {
+        "id": 12,
+        "name": "Fossil Nate Chronograph Analog Black Dial Grey Band Men's Stainless Steel Watch",
+        "price": "₹860.00",
+        "images": ["images/man/menwatch1_4.jpg"],
+        "category": "Man",
+        "description": "The Mechanical Watch. One for the traditional man. A mechanical watch is your original, old-fashioned, hand-wound watch. Unlike a quartz watch, which is battery-powered, a mechanical watch is driven by a vast network of intricate workings and expert craftsmanship."
+    },
+    {
+        "id": 13,
+        "name": "Kung Fu Panda: Skadoosh Boyfriend Tshirt",
+        "price": "₹390.00",
+        "images": ["images/woman/tshirt1.webp"],
+        "isTrending": true,
+        "category": "Woman",
+        "description": "TSS Originals or The Souled Store Originals is our exclusive range of funny, funky, trendy and stylish designs. Designed by our kick-ass team of in-house designers, TSS Originals are some cool and quirky designs that help you speak your vibe."
+    },
+    {
+        "id": 14,
+        "name": "Lime Bralette Top",
+        "price": "₹180.00",
+        "images": ["images/woman/top1.webp"],
+        "isTrending": true,
+        "category": "Woman",
+        "description": "TSS Originals or The Souled Store Originals is our exclusive range of funny, funky, trendy and stylish designs. Designed by our kick-ass team of in-house designers, TSS Originals are some cool and quirky designs that help you speak your vibe."
+    },
+    {
+        "id": 15,
+        "name": "TSS Originals: Desi Paintwork Women Holiday Shirt",
+        "price": "₹1880.00",
+        "images": ["images/woman/shirt1.webp"],
+        "category": "Woman",
+        "description": "TSS Originals or The Souled Store Originals is our exclusive range of funny, funky, trendy and stylish designs. Designed by our kick-ass team of in-house designers, TSS Originals are some cool and quirky designs that help you speak your vibe."
+    },
+    {
+        "id": 16,
+        "name": "Solids: Lavender (Utility) Women Cargo Joggers",
+        "price": "₹480.00",
+        "images": ["images/woman/cargo1.webp"],
+        "category": "Woman",
+        "description": "TSS Originals or The Souled Store Originals is our exclusive range of funny, funky, trendy and stylish designs. Designed by our kick-ass team of in-house designers, TSS Originals are some cool and quirky designs that help you speak your vibe."
+    },
+    {
+        "id": 17,
+        "name": "Women FemmeFlex Running/Walking Sports Shoes",
+        "price": "₹1480.00",
+        "images": ["images/woman/Women_shoes1.webp"],
+        "isTrending": true,
+        "category": "Woman",
+        "description": "Benefits: Where you seek the casual look you deserve, with ease and cozy vibes, this pair of sliders is best for you. With the cushioning sole experience and slip-ons, feel the bliss of walking with grace."
+    },
+    {
+        "id": 18,
+        "name": "CRUSH CLOG",
+        "price": "₹780.00",
+        "images": ["images/woman/crocs1.webp"],
+        "category": "Woman",
+        "description": "Benefits: Where you seek the casual look you deserve, with ease and cozy vibes, this pair of sliders is best for you. With the cushioning sole experience and slip-ons, feel the bliss of walking with grace."
+    },
+    {
+        "id": 19,
+        "name": "Womens Lily Sling Back Athletic Sandals",
+        "price": "₹1980.00",
+        "images": ["images/woman/sandal1.jpg"],
+        "category": "Woman",
+        "description": "Benefits: Where you seek the casual look you deserve, with ease and cozy vibes, this pair of sliders is best for you. With the cushioning sole experience and slip-ons, feel the bliss of walking with grace."
+    },
+    {
+        "id": 20,
+        "name": "Casual Sliders for Women",
+        "price": "₹2660.00",
+        "images": ["images/woman/slides1.jpg"],
+        "isTrending": true,
+        "category": "Woman",
+        "description": "Benefits: Where you seek the casual look you deserve, with ease and cozy vibes, this pair of sliders is best for you. With the cushioning sole experience and slip-ons, feel the bliss of walking with grace."
+    },
+    {
+        "id": 21,
+        "name": "Rose Gold Dial Mesh Strap Watch for Women",
+        "price": "₹1980.00",
+        "images": ["images/woman/watch1_1.jpg"],
+        "isTrending": true,
+        "category": "Woman",
+        "description": "It is designed to keep a consistent movement despite the motions caused by the person's activities."
+    },
+    {
+        "id": 22,
+        "name": "Pearl Dial Metal & Plastic Strap Watch for Women",
+        "price": "₹1060.00",
+        "images": ["images/woman/watch1_2.jpg"],
+        "category": "Woman",
+        "description": "It is designed to keep a consistent movement despite the motions caused by the person's activities."
+    },
+    {
+        "id": 23,
+        "name": "Rose Gold Dial Metal Strap Watch for Women",
+        "price": "₹520.00",
+        "images": ["images/woman/watch1_3.jpg" ], 
+        "category": "Woman",
+        "description": "It is designed to keep a consistent movement despite the motions caused by the person's activities."
+    },
+    {
+        "id": 24,
+        "name": "Brown Dial Leather Strap Watch for Women",
+        "price": "₹1500.00",
+        "images": ["images/woman/watch4_1.jpg"],
+        "category": "Woman",
+        "description": "It is designed to keep a consistent movement despite the motions caused by the person's activities."
+    }
+    
+]
